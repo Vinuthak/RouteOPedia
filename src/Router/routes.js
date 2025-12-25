@@ -10,7 +10,11 @@ const router = createRouter({
         {path:"/", component: HomePage},
         {path:"/contact", component: Contact},
         {path: "/productList", component: ProductList},
-        {path: "/product/:product_id", component: ProductDetail}
+        {path: "/product/:product_id/:category_id?", component: ProductDetail},
+        // {path: "/product/:product_id", component: ProductDetail},sice we can also make it optional by using '?'
+        {path: "/product", component: ProductDetail}
+
+        
     ]
 });
 
